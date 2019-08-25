@@ -22,7 +22,10 @@
   },
   "scripts": {
     "build": "browserify app.js -o dist/bundle",
-    "watch": "watchify app.js -o dist/bundle -v"
+    "watch": "watchify app.js -o dist/bundle -v",
+    "dokku": {
+      "npm run build"
+    }
   },
   "version": "0.0.0"
 }
